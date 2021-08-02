@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(cmake_clion_conan_template)
+project(oop_teaching_2021_s2)
 
 # Author : Akide Liu (https://github.com/AkideLiu)
 # This template integrated Cmake Clion Conan for University of Adelaide C++ direction course educational purpose only
@@ -58,3 +58,4 @@ target_link_libraries(cmake_clion_template
 # -------------------------------------------------------
 # subdirectory support
 add_subdirectory(src/AVLTree)
+add_subdirectory(src/week1-group-public)
