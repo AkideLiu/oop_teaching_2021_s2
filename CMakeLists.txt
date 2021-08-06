@@ -59,3 +59,4 @@ target_link_libraries(cmake_clion_template
 # subdirectory support
 add_subdirectory(src/AVLTree)
 add_subdirectory(src/week1-group-public)
+add_subdirectory(src/week2-group)
