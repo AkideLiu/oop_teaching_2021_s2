@@ -5,7 +5,7 @@ include_directories(
 conan_basic_setup() # conan support
 
 add_executable(week2-group # your sub-project name
-        ../test/week2-group-test.cpp
+        ../Test/week2-group-test.cpp
         function-1-1.cpp
         function-1-2.cpp function-1-3.cpp function-1-4.cpp function-1-5.cpp function-2-1.cpp function-2-2.cpp function-2-3.cpp function-2-4.cpp)
 
