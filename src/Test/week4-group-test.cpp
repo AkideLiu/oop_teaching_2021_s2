@@ -56,7 +56,8 @@ extern int maximum_sum(int *nums, int length);
 
 int maxSubArraySum(int a[], int size)
 {
-    int max_so_far = INT_MIN, max_ending_here = 0;
+    int max_so_far = INT_MIN;
+    int max_ending_here = 0;
 
     for (int i = 0; i < size; i++)
     {
