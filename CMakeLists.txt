@@ -61,3 +61,6 @@ add_subdirectory(src/AVLTree)
 add_subdirectory(src/week1-group-public)
 add_subdirectory(src/week2-group)
 add_subdirectory(src/week3-group)
+add_subdirectory(src/week4-group)
+
+add_executable(pointer-array-shallow src/week4-group/pointer-array-shallow.cpp)
