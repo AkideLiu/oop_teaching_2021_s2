@@ -14,6 +14,7 @@
 #include <dbg.h>
 #include <cmath>
 #include <algorithm>
+#include <climits>
 #include <exception>
 
 // test target :
