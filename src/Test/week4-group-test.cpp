@@ -16,6 +16,7 @@
 #include <algorithm>
 #include <climits>
 #include <exception>
+#include <random>
 
 // test target :
 
@@ -70,6 +71,48 @@ int maxSubArraySum(int a[], int size)
             max_ending_here = 0;
     }
     return max_so_far;
+}
+
+// 1-1
+extern void copy_2d_strings(string first[][2], string second[][2], int n);
+
+// generate random string
+// https://stackoverflow.com/a/47978023
+// https://inversepalindrome.com/blog/how-to-create-a-random-string-in-cpp
+
+string random_string()
+{
+    std::string str("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
+
+    std::random_device rd;
+    std::mt19937 generator(rd());
+
+    std::shuffle(str.begin(), str.end(), generator);
+
+    return str.substr(0, 5);    // assumes 32 < number of characters in str
+}
+
+//NOLINT : https://www.programmersought.com/article/77252032600/
+
+TEST(prac4,q1_1) /* NOLINT */ {
+    int n = 3;
+    string first_array[3][2] = {};
+    string second_array[3][2] = {};
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            // first_array[i][j] = rand() % 10;
+            first_array[i][j] = random_string();
+        }
+    }
+
+    copy_2d_strings(first_array, second_array, n);
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < 2; ++j) {
+            EXPECT_EQ(first_array[i][j],second_array[i][j]);
+        }
+    }
 }
 
 TEST(week4_prac,test_2_2){
