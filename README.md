@@ -28,4 +28,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
+## NOTICE : I would please declare the FULL copyright / ownership and NO responsibility for this repository, any code / resources directly submit to any university managed testing or examination systemes without innovation is at your own RISK and might lead to breach [Academic Integrity Policy](https://www.adelaide.edu.au/policies/230/). 
+
 
