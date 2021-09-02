@@ -84,3 +84,8 @@ TEST(week5_workshop,function_4_2){
     fmt::print("{} {}",mm[0],mm[1]);
 
 }
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
