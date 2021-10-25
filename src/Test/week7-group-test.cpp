@@ -242,6 +242,8 @@ TEST(week7_test,test6){
         cout << "add_musician : " << o->add_musician(test_array[i]) << endl;
     }
 
+    EXPECT_NE(test_array[0].get_instrument(),test_array[1].get_instrument());
+
     Musician *temp = o->get_members();
     for (int i = 0; i < size; ++i) {
 
